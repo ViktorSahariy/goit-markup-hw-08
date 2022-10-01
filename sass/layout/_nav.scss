@@ -1,13 +1,4 @@
 .nav {
-    @media (max-width:768px) {
-
-        
-    }
-
-    @media (max-width:480){
-
-        
-    }
     &__logo {
         color: var(--color-second);
         font-family: var(--font-family-logo);
@@ -22,7 +13,7 @@
         &-word {
             color: var(--color-primary);
         }
-
+        
     }
     
 
@@ -91,6 +82,18 @@
         &:focus {
             color: var(--color-second);
         }
+
+        @media(max-width: 1200px) {
+            
+        }
+
+        @media(max-width: 768px) {
+            
+        }
+
+        @media(max-width: 420px) {
+            
+        }
     }
 
     &-contacts {
@@ -109,6 +112,19 @@
         &__icon:hover,
         &__icon:focus {
             color: var(--color-second);
+        }
+
+        @media (max-width: 1200px) {
+
+        }
+
+        @media (max-width: 7680px) {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 420px) {
+
         }
     }  
 }

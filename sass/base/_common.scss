@@ -17,22 +17,6 @@ body {
 
 .container {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
-    //Mobil styles
-    @media screen and (max-width:480px) {
-        max-width: 450px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
-    }
-    //Laptop styles
-    @media screen and (max-width:768px) {
-        max-width: 730px;
-    }
-    //Desktop styles 
-    @media screen and (max-width:1200px) {
-        max-width: 1200px;        
-    }
 }
