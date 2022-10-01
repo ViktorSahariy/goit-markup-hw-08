@@ -1,4 +1,13 @@
 .nav {
+    @media (max-width:768px) {
+
+        
+    }
+
+    @media (max-width:480){
+
+        
+    }
     &__logo {
         color: var(--color-second);
         font-family: var(--font-family-logo);
@@ -13,7 +22,9 @@
         &-word {
             color: var(--color-primary);
         }
+
     }
+    
 
     &__list {
         display: flex;

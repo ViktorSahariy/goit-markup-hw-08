@@ -70,10 +70,28 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .backdrop {
@@ -466,8 +484,17 @@ header {
 .clients__title {
   font-weight: 700;
   font-size: 36px;
+  line-height: 42px;
   text-align: center;
   margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+@media (max-width: 768px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 .clients__list {
   display: -webkit-box;
@@ -477,8 +504,20 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 768px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 .clients__item {
   margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .clients__item {
+    margin-right: 0;
+  }
 }
 .clients__item:last-child {
   margin-right: 0;
