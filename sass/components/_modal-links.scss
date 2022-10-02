@@ -1,0 +1,27 @@
+.modal-links__list {
+    display: flex;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 768px;
+    }
+}
+
+.modal-links__item {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 00.02em;
+    margin-bottom: 48px;
+    &:not(:last-child) {
+        margin-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px; 
+    }
+}
+
+.modal-links__link {
+    color: rgba(33, 150, 243, 1);
+    text-decoration: none;
+}

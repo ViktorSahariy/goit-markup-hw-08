@@ -1,0 +1,221 @@
+:root {
+    --color-primary: #212121;
+    --color-second: #2196f3;
+    --color-contacts: #757575;
+    --color-hero: #2f303a;
+    --color-hero-name: #ffffff;
+    --color-button: #188ce8;
+    --color-team: #f5f4fa;
+    --color-contacts-foter: rgba(255, 255, 255, 0.6);
+    --color-social-icons: #afb1b8; 
+    --color-icons-footer: rgba(255, 255, 255, 0.1);
+    --color-icons: #afb1b8;
+    --color-background: rgba(47, 48, 58, 0.8);
+    --color-bckground: rgba(33, 150, 243, 0.9);
+    
+    --font-primary: 'Roboto' , sans-serif;
+    --font-secondary: 'Raleway' , sans-serif;
+}
+
+$margin: 0;
+$padding: 0;
+
+ul,
+.footer__adress,
+.footer__social,
+.footer-social__title,
+.portfolio-box__paragraph,
+.overlay__paragraph,
+.form__input {
+    margin: $margin;
+}
+.visually-hidden,
+.quality__box,
+.footer__adress,
+.footer__social {
+    padding: $padding;
+}
+
+body {
+    color: var(--color-primary);
+    font-family: var(--color-primary);
+    margin: $margin;
+}
+
+.hero__title,
+.form__button {
+    font-family: var(--color-primary);
+}
+.nav__logo,
+.footer__logo {
+    font-family: var(--font-secondary);
+}
+
+
+.nav__logo-word,
+.portfolio-box__name,
+.form__control,
+.team__name {
+    color: var(--color-primary);
+}
+
+.team__item {
+    background-color: var(--color-hero-name);
+}
+.modal,
+.modal__close {
+    background-color: var(--color-hero-name);
+}
+
+.clients__link {
+    color: var(--color-icons);
+    
+    &:hover,
+    &:focus {
+        border-color: var(--color-second);
+        color: var(--color-second);
+    }
+}
+
+.nav__button {
+    &:hover,
+    &:focus {
+        color: var(--color-second);
+    }
+}
+
+.form-check__icon {
+    background-color: var(--color-second);
+    fill: var(--color-hero-name);
+}
+
+.nav__link {
+    color: var(--color-primary);
+    &:hover,
+    &:focus {
+        color: var(--color-second);
+    }
+    &::after {
+        background-color: var(--color-second);
+    }
+}
+
+.nav-contacts__link {
+    color: var(--color-contacts);
+    &:hover,
+    &:focus {
+        color: var(--color-second);
+    }
+}
+
+.social-list__link {
+    color: var(--color-social-icons);
+   
+    &:focus,
+    &:hover {
+        color: var(--color-hero-name);
+        background-color: var(--color-second);
+    }
+}
+
+.nav-contacts__icon {
+
+    &:hover,
+    &:focus {
+        color: var(--color-second);
+    }
+}
+
+.footer__contacts {
+    color: var(--color-contacts-foter);
+    &:hover,
+    &:focus {
+        color: var(--color-second);
+    }
+}
+
+.nav__logo,
+.nav__link.current,
+.footer__logo {
+    color: var(--color-second);
+}
+
+.form__icons {
+    .form__input:focus + & {
+        color: var(--color-second);
+    }
+}
+.paragraph,
+.portfolio-box__paragraph {
+    color: var(--color-contacts);
+}
+
+.hero.section,
+.footer,
+.send__input {
+    background-color: var(--color-hero);
+}
+
+.hero__title,
+.work__text,
+.footer,
+.word-logo,
+.send__input,
+.send__button,
+.form__button,
+.overlay__paragraph,
+.hero__title {
+    color: var(--color-hero-name);
+}
+
+.footer__link {
+    color: var(--color-hero-name);
+    background-color: var(--color-icons-footer);
+    &:hover,
+    &:focus {
+        color: var(--color-hero-name);
+        background-color: var(--color-second);
+    }
+}
+
+.send__button,
+.form__button  {
+    background-color: var(--color-second);
+}
+.hero__button {
+    font-family: var(--font-primary);
+    background-color: var(--color-second);
+    color: var(--color-hero-name);
+    &:hover,
+    &:focus {
+        background-color: var(--color-button);
+    }
+}
+
+.quality__box,
+.section.team {
+    background-color: var(--color-team);
+}
+.portfolio__buttons {
+    font-family: var(--font-primary);
+    background-color: var(--color-team);
+    &:hover,
+    &:focus {
+        background-color: var(--color-second);
+        color: var(--color-hero-name);
+    }
+}
+
+
+.footer__link {
+    background-color: var(--color-icons-footer);
+}
+
+
+.work__box {
+    background-color: var(--color-background);
+}
+
+.overlay {
+    background-color: var(--color-bckground);
+}

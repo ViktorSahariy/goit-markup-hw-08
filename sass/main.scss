@@ -1,17 +1,25 @@
-@import './utils/vars';
-@import './base/reset';
-@import './base/common';
+@import './normalize/normalize';
+@import './utils/variables';
+@import './components/body';
+@import './components/header';
+@import './components/logo';
+@import './components/nav-links';
+@import './components/nav-contacts';
+@import './components/_hero';
+@import './components/hero-button';
+@import './components/name';
+@import './components/quality';
+@import './components/works';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/filters-buttons';
+@import './components/image-portfolio';
+@import './components/section';
 @import './components/modal';
-@import './layout/nav';
-@import './layout/hero';
-@import './layout/clients';
-@import './layout/footer';
-@import './layout/layout';
-@import './layout/portfolio';
-@import './layout/quality';
-@import './layout/team';
-@import './layout/works';
-
+@import './components/form-modal';
+@import './components/modal-links';
+@import './components/mobile-menu';
 
 
 
