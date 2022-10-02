@@ -12,7 +12,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../);
+        url(/images/hero-background.jpg);
         
     
         @media screen and (min-device-pixel-ratio: 2),
@@ -23,7 +23,7 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../);
+            url(/images/hero-background.jpg);
         }
     }
 
@@ -32,7 +32,7 @@
         to right,
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)),
-        url(../);
+        url(/images/hero-background.jpg);
          width: 480px;
         height: 400px;
         background-size: 480px 400px;
@@ -45,7 +45,7 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../);
+            url(/images/hero-background.jpg);
         }
     }
     @media screen and (min-width: 768px) {
@@ -53,7 +53,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../);
+        url(/images/hero-background.jpg);
         width: 768px;
         height: 400px;
         background-size: 768px 400px;
@@ -66,7 +66,7 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../images/bgh);
+            url(/images/hero-background.jpg);
         }                
     }
     @media screen and (min-width: 1200px) {
@@ -74,7 +74,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../image);
+        url(/images/hero-background.jpg);
         width: 100%;
         max-width: 1600px;
         height: 600px;
@@ -88,7 +88,7 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../images/);
+            url(/images/hero-background.jpg);
         }
     }
               
