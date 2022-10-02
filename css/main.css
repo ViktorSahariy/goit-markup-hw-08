@@ -194,13 +194,13 @@ ul,
 
 body {
   color: var(--color-primary);
-  font-family: var(--color-primary);
+  font-family: var(--font-primary);
   margin: 0;
 }
 
 .hero__title,
 .form__button {
-  font-family: var(--color-primary);
+  font-family: var(--font-primary);
 }
 
 .nav__logo,
@@ -661,6 +661,7 @@ header {
 }
 
 .hero__title {
+  font-family: var(--font-family-primary);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
