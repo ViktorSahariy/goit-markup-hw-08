@@ -1386,7 +1386,7 @@ header {
 }
 @media screen and (max-width: 414px) {
   .form__input {
-    width: 304px;
+    width: 332px;
   }
 }
 .form__input:focus {
@@ -1412,7 +1412,7 @@ header {
 }
 @media screen and (max-width: 414px) {
   .form__textarea {
-    width: 304px;
+    width: 332px;
   }
 }
 .form__textarea:focus {
@@ -1569,7 +1569,7 @@ header {
 }
 @media screen and (max-width: 414px) {
   .form__button {
-    margin: 0px 56px 40px;
+    margin: 0px 77px 40px;
   }
 }
 .form__button:hover, .form__button:focus {
@@ -1929,7 +1929,7 @@ header {
 }
 @media screen and (max-width: 414px) {
   .modal {
-    width: 335px;
+    width: 361px;
   }
 }
 

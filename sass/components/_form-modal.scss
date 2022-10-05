@@ -49,7 +49,7 @@
         width: 370px;
     }
     @media screen and (max-width: 414px) {
-        width: 304px;
+        width: 332px;
     }
 
     &:focus {
@@ -73,7 +73,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     @media screen and(max-width: 414px) {
-        width: 304px;
+        width: 332px;
     }
 
     &:focus {
@@ -161,7 +161,7 @@
         margin: 0 125px 40px;
     }
     @media screen and (max-width: 414px) {
-        margin: 0px 56px 40px;
+        margin: 0px 77px 40px;
     }
     margin: 0 164px 40px;
     border-radius: 4px;
