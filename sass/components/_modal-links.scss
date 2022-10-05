@@ -8,6 +8,17 @@
         width: 768px;
        
     }
+
+    @media screen and (max-width: 414px) {
+
+    }
+    
+}
+
+.modal-links__list li {
+    @media screen and (max-width: 414px) {
+        font-size: 12px;
+    }
 }
 
 .modal-links__item {
