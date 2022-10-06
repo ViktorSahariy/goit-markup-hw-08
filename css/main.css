@@ -1471,6 +1471,11 @@ header {
     margin-right: 40px;
   }
 }
+@media screen and (max-width: 414px) {
+  .form__check {
+    margin: 35px;
+  }
+}
 
 .form-check__label {
   font-weight: 400;
@@ -1569,7 +1574,7 @@ header {
 }
 @media screen and (max-width: 414px) {
   .form__button {
-    margin: -19px 57px 2px;
+    margin: 0px 85px 2px;
   }
 }
 .form__button:hover, .form__button:focus {

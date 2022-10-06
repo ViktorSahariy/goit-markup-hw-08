@@ -94,6 +94,10 @@
         margin-left: 40px;
         margin-right: 40px;
     }
+
+	 @media screen and (max-width: 414px) {
+		margin: 35px;
+	 }
     margin-bottom: 30px;
     margin-left: 52px;
     margin-right: 52px;
@@ -160,7 +164,7 @@
         margin: 0 125px 40px;
     }
     @media screen and (max-width: 414px) {
-        margin: -19px 57px 2px;
+        margin: 0px 85px 2px;
     }
     margin: 0 164px 40px;
     border-radius: 4px;
