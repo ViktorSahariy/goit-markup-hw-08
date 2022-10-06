@@ -109,7 +109,7 @@
 
 }
 .hero__title {
-	width: 696px;
+	max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -120,7 +120,15 @@
     margin-bottom: 30px;
 	 
     @media screen and (max-width: 1199px) {
+		  max-width: 360px;
         font-size: 26px;
         line-height: 1.61;
     }
+
+	//  @media screen and (max-width: 768px) {
+		
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	//  }
+
 }

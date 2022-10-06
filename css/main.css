@@ -839,7 +839,7 @@ header {
 }
 
 .hero__title {
-  width: 696px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -851,6 +851,7 @@ header {
 }
 @media screen and (max-width: 1199px) {
   .hero__title {
+    max-width: 360px;
     font-size: 26px;
     line-height: 1.61;
   }
@@ -1566,7 +1567,8 @@ header {
 }
 
 .form__button {
-  margin: 0 164px 40px;
+  display: block;
+  margin: 0 auto;
   border-radius: 4px;
   border: 1px;
   cursor: pointer;
