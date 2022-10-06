@@ -38,4 +38,8 @@
 .modal-links__link {
     color: rgba(33, 150, 243, 1);
     text-decoration: none;
+
+	 @media screen and (max-width: 414px) {
+		font-size: 11px;
+	 }
 }
