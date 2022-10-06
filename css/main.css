@@ -1343,6 +1343,11 @@ header {
     margin-right: 40px;
   }
 }
+@media screen and (max-width: 380px) {
+  .form__title {
+    font-size: 16px;
+  }
+}
 
 .form__box {
   margin-bottom: 10px;
@@ -1476,6 +1481,11 @@ header {
     margin: 35px;
   }
 }
+@media screen and (max-width: 385px) {
+  .form__check {
+    margin: 29px;
+  }
+}
 
 .form-check__label {
   font-weight: 400;
@@ -1574,7 +1584,12 @@ header {
 }
 @media screen and (max-width: 414px) {
   .form__button {
-    margin: 0px 85px 2px;
+    margin: -14px 85px 2px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .form__button {
+    margin: -14px 50px 2px;
   }
 }
 .form__button:hover, .form__button:focus {
