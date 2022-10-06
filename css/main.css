@@ -1569,7 +1569,7 @@ header {
 }
 @media screen and (max-width: 414px) {
   .form__button {
-    margin: 0px 57px 2px;
+    margin: -19px 57px 2px;
   }
 }
 .form__button:hover, .form__button:focus {
