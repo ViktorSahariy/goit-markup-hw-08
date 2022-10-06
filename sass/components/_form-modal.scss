@@ -128,13 +128,12 @@
     margin-right: 7px;
     border: 2px solid --color-primarybl;
     border-radius: 2px;
-    box-shadow: 0 4px 4px 0 #00000040;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 52%);
 }
 .form__checkbox {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
 }
 
 .form-check__icon {
