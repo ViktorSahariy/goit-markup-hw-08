@@ -29,7 +29,7 @@
                     type="button"
                     class="menu-toggle js-close-menu"
                     aria-expanded="false"
-                    aria-controls="header"
+                    aria-controls="nav__menu"
                     data-menu-button>
                     <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                         <use href="./images/icons.svg#icon-close"></use>
@@ -134,15 +134,13 @@
                             </div>
                         </div>
                         <div class="form__check">
-                            <label class="form-check__label" for="accept">   
-                                
-											<input type="checkbox" class="form__control" id="accept" name="accept" value="accept">
-									
-                                    <!-- <input class="form__checkbox" type="checkbox" name="accept" value="accept" id="accept" /> -->
-                                    <!-- <svg class="form-check__icon" aria-hidden="true" width="16" height="15">
+                            <label class="form-check__label" for="accept"> 
+                                <div class="form__control">
+                                    <input class="form__checkbox" type="checkbox" name="accept" value="accept" id="accept" />
+                                    <svg class="form-check__icon" aria-hidden="true" width="16" height="15">
                                         <use href="./images/icons.svg#icon-check"></use>
-                                    </svg> -->
-
+                                    </svg>
+                                </div>
                                 Погоджуюся з розсилкою та приймаю<a href="#" class="form__word">Умови договору</a></label>
                         </div>
                         <button class="form__button" type="submit">Відправити</button>
