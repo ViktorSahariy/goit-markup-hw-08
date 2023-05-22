@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.slider-primary {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* забезпечити горизонтальний прокрутка */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* забезпечити неперервну анімацію */
+  -webkit-animation: slide 25s infinite;
+          animation: slide 25s infinite;
+}
+
+.slides-primary img {
+  width: 200px;
+  margin-left: 10px;
+  height: auto;
+  border-radius: 6%;
+}
+
+/* анімація прокрутки слайдів */
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  16.666% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  33.333% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  50% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  66.666% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  83.333% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  16.666% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  33.333% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  50% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  66.666% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  83.333% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+}/*# sourceMappingURL=-slider-primary.css.map */

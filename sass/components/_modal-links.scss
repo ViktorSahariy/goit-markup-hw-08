@@ -1,22 +1,22 @@
 .modal-links__list {
     display: flex;
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         display: none;
     }
 
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         width: 768px;
        
     }
 
-    @media screen and (max-width: 414px) {
+    @media (max-width: 414px) {
 
     }
     
 }
 
 .modal-links__list li {
-    @media screen and (max-width: 414px) {
+    @media (max-width: 414px) {
         font-size: 12px;
     }
 }
@@ -39,7 +39,7 @@
     color: rgba(33, 150, 243, 1);
     text-decoration: none;
 
-	 @media screen and (max-width: 414px) {
+	 @media (max-width: 414px) {
 		font-size: 11px;
 	 }
 }

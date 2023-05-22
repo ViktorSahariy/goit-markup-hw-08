@@ -1,5 +1,5 @@
 .nav__list { 
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         display: flex;
     }
     
@@ -9,13 +9,13 @@
     position: relative;
     display: block;
 
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
          
             padding-bottom: 16px;
             padding-top: 16px;
         
     }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -24,7 +24,7 @@
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         &::after {
             content: '';
         position: absolute;
@@ -49,7 +49,7 @@
 
 
 .nav__item {
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         &:not(:first-child) {
             margin-left: 50px;
         }
@@ -62,7 +62,7 @@
     }
    
 
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         font-size: 40px;
         line-height: 1.172;
         letter-spacing: 00.02em;
@@ -70,7 +70,7 @@
         
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         &:first-child {
             margin-left: 88px;
         }
@@ -78,12 +78,12 @@
 }
 
 .mail {
-	@media screen and (max-width: 480px) {
+	@media (max-width: 480px) {
 		color: var(--color-contacts);
 		font-size: 34px;
 	}
 	
-	@media screen and (max-width: 414px) {
+	@media (max-width: 414px) {
 		font-size: 23px;
 	}
 
@@ -91,12 +91,12 @@
 }
 
 .phone {
-	@media screen and (max-width: 480px) {
+	@media (max-width: 480px) {
 		color: var(--color-second);
 		font-size: 34px;
 	}
 
-	@media screen and (max-width: 414px) {
+	@media (max-width: 414px) {
 		font-size: 23px;
 	}
 }

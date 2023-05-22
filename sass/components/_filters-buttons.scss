@@ -1,6 +1,6 @@
 .portfolio__list {
     display: flex; 
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         margin-bottom: 40px;
         flex-wrap: wrap;
     }
@@ -14,7 +14,7 @@
     &:last-child {
         margin-right: 0;
     }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
         margin-bottom: 10px;
         &:nth-child(3) {
             margin-right: 0;

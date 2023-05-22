@@ -1,0 +1,110 @@
+/* Стилі для секції "Про компанію" */
+.about-section {
+  padding: 25px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reasons-list {
+  // list-style-type: disc;
+  padding-left: 20px;
+	list-style: none;
+}
+
+.reasons-item {
+  margin-bottom: 10px;
+}
+
+// .about__man {
+//   position: relative;
+//   max-width: 100%;
+// }
+
+.about__man {
+  float: left;
+  margin-right: 20px;
+}
+
+.img__man {
+  width: 300px; /* Задайте ширину зображення за потребою */
+  height: auto;
+}
+
+.section-description {
+  margin-top: 0;
+}
+
+.txt-size {
+	text-align: justify;
+}
+
+
+/* Адаптивні стилі для телефону */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-description {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .reasons-list {
+    padding-left: 15px;
+  }
+
+	.img__man {
+		width: 160px;
+		padding-left: 56px;
+	}
+}
+
+/* Адаптивні стилі для планшету */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-description {
+    font-size: 17px;
+    margin-bottom: 35px;
+  }
+}
+
+/* Адаптивні стилі для ПК */
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-description {
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

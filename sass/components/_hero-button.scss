@@ -1,13 +1,39 @@
 .hero__button {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;;
-    border: 1px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    display: inline-block;
-    padding: 10px 32px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	font-family: var(--font-primary);
+	background-color: var(--color-second);
+	color: var(--color-hero-name);
+	padding: 10px 32px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 1px;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+			background-color: var(--color-button);
+	}
+
+	&--translate {
+		
+	}
+} 
+
+.button__group {
+	position: absolute;
+	top: 75%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
+
+
+
+
