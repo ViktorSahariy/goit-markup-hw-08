@@ -85,89 +85,98 @@
 					accuracy<span>&rdquo;</span> </h1>
 			</div>
 			<div class="button__group">
-				<button class="btn-order" id="consultation-button">Отримати консультацію</button>
-				<button class="btn-order" id="order-button">Оформити замовлення</button>
-				<!-- Модальне вікно для консультації -->
-				<div id="consultation-modal" class="modal">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h2>Консультація</h2>
-						<form id="consultation-form">
-							<label for="name">Ім'я</label>
-							<input type="text" id="name" required>
-							<label for="phone">Номер телефону</label>
-							<input type="tel" id="phone" required>
-							<label for="email">Email</label>
-							<input type="email" id="email" required>
-							<label for="comment">Коментар</label>
-							<textarea id="comment"></textarea>
-							<button type="submit">Відправити</button>
-						</form>
+				<button class="btn-order" id="consultation-btn">Отримати консультацію</button>
+				<div id="consultation-modal">
+					<div class="consultation-form">
+						<span class="close" id="close-btn">&times;</span>
+						<h2>Форма для отримання консультації</h2>
+						<label for="name">Ім'я:</label>
+						<input type="text" id="name">
+						<label for="email">Електронна пошта:</label>
+						<input type="email" id="email">
+						<label for="message">Повідомлення:</label>
+						<textarea id="message"></textarea>
+						<button id="submit-btn">Надіслати</button>
 					</div>
 				</div>
 				<!-- Модальне вікно для замовлення -->
-				<div id="order-modal" class="modal">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h2>Оформлення замовлення</h2>
-						<form id="order-form">
-							<label for="source-language">Мова початкового тексту</label>
-							<select id="source-language" required>
-								<option value="ukr">Українська</option>
-								<option value="eng">Англійська</option>
-								<option value="rus">Російська</option>
-							</select>
-							<label for="target-language">Мова перекладу</label>
-							<select id="target-language" required>
-								<option value="ukr">Українська</option>
-								<option value="eng">Англійська</option>
-								<option value="rus">Російська</option>
-							</select>
-							<label for="document-type">Тип документу</label>
-							<select id="document-type" required>
-								<option value="book">Книга</option>
-								<option value="document">Документ</option>
-								<option value="other">Інше</option>
-							</select>
-							<input type="file" id="file" required>
-							<button type="submit">Підтвердити</button>
-							<button type="button" id="cancel-button">Скасувати</button>
-						</form>
-					</div>
-				</div>
-			</div>
+				<button class="btn-order" id="order-btn">Замовити переклад</button>
+<div id="order-modal">
+  <div class="order-form">
+    <span class="close" id="order-close-btn">&times;</span>
+    <h2>Форма замовлення перекладу</h2>
+    <label for="source-language">Вибір мови з якої перекласти:</label>
+    <select id="source-language">
+      <option value="english">Англійська</option>
+      <option value="french">Французька</option>
+      <option value="german">Німецька</option>
+    </select>
+    <label for="target-language">Вибір мови на яку перекласти:</label>
+    <select id="target-language">
+      <option value="english">Англійська</option>
+      <option value="french">Французька</option>
+      <option value="german">Німецька</option>
+    </select>
+    <label for="translation-type">Тип перекладу:</label>
+    <select id="translation-type">
+      <option value="written">Письмовий</option>
+      <option value="oral">Усний</option>
+      <option value="specialized">Спеціалізований</option>
+    </select>
+    <label for="text-volume">Обсяг тексту:</label>
+    <input type="text" id="text-volume">
+    <label for="text-topic">Тематика тексту:</label>
+    <input type="text" id="text-topic">
+    <label for="deadline">Терміни виконання замовлення:</label>
+    <input type="text" id="deadline">
+    <label for="client-name">Ім'я:</label>
+    <input type="text" id="client-name">
+    <label for="client-email">Електронна пошта:</label>
+    <input type="email" id="client-email">
+    <label for="delivery-address">Місце доставки:</label>
+    <input type="text" id="delivery-address">
+    <label for="file-upload">Завантаження файлів для перекладу:</label>
+    <div class="file-upload">
+      <input type="file" id="file-upload">
+      <label for="file-upload">Вибрати файл</label>
+    </div>
+    <button id="submit-btn">Замовити</button>
+  </div>
+</div>
+
 		</section>
 		<section class="about-section">
 			<div class="about__man">
 				<img class="img__man" src="./images/vikt/business-3d-young-man-with-coffee-standing-and-speaking.png" alt="">
 			</div>
 			<div class="container">
-				<p class="section-description txt-size">TranslatePRO - це провідна компанія в галузі перекладу, яка надає широкий спектр
-					перекладацьких послуг для клієнтів з усього світу. Ми зосереджені на забезпеченні високоякісних перекладів з
-					різних мов та спеціалізацій.</p>
+				<p class="section-description txt-size">TranslatePRO - це провідна компанія в галузі перекладу, яка надає
+					широкий спектр перекладацьких послуг для клієнтів з усього світу. Ми зосереджені на забезпеченні високоякісних
+					перекладів з різних мов та спеціалізацій.</p>
 				<p class="section-description">Чому люди обирають саме нас?</p>
-				<button type="button" class="btn-about" id="info-btn"></button>
-				<div id="info-btn" class="modal">
+				<button type="button" class="btn-about" id="info-btn">Дізнатися більше</button>
+				<!-- Модальне вікно з описом компанії -->
+				<div id="info-modal" class="modal">
 					<div class="about-info">
 						<span class="close">&times;</span>
 						<img src="/images/vikt/3d-casual-life-group-of-young-people-discussing-something-while-working.png" alt="">
 						<form id="about-form">
-							
+							<h2>Чому обирають TranslatePRO?</h2>
+							<ul class="reasons-list">
+								<li class="reasons-item">Досвід та професіоналізм: Наша команда включає досвідчених перекладачів, які
+									мають глибокі знання мови та культури, а також спеціалістів з різних галузей.</li>
+								<li class="reasons-item">Висока якість: Ми прагнемо до найвищих стандартів якості в кожному перекладі,
+									забезпечуючи точність, правильну граматику та вірну передачу сенсу тексту.</li>
+								<li class="reasons-item">Широкий спектр послуг: Ми пропонуємо переклади для різних галузей, включаючи
+									медицину, технології, бізнес, право та багато інших.</li>
+								<li class="reasons-item">Конфіденційність: Ми дотримуємося строгих політик конфіденційності, гарантуючи,
+									що ваші документи та інформація залишаються в безпеці.</li>
+								<li class="reasons-item">Клієнтська підтримка: Наша команда завжди готова надати професійну та дружню
+									підтримку клієнтам, відповісти на запитання та допомогти з будь-якими потребами.</li>
+							</ul>
 						</form>
 					</div>
 				</div>
-				<ul class="reasons-list">
-					<li class="reasons-item">Досвід та професіоналізм: Наша команда включає досвідчених перекладачів, які мають
-						глибокі знання мови та культури, а також спеціалістів з різних галузей.</li>
-					<li class="reasons-item">Висока якість: Ми прагнемо до найвищих стандартів якості в кожному перекладі,
-						забезпечуючи точність, правильну граматику та вірну передачу сенсу тексту.</li>
-					<li class="reasons-item">Широкий спектр послуг: Ми пропонуємо переклади для різних галузей, включаючи
-						медицину, технології, бізнес, право та багато інших.</li>
-					<li class="reasons-item">Конфіденційність: Ми дотримуємося строгих політик конфіденційності, гарантуючи, що
-						ваші документи та інформація залишаються в безпеці.</li>
-					<li class="reasons-item">Клієнтська підтримка: Наша команда завжди готова надати професійну та дружню
-						підтримку клієнтам, відповісти на запитання та допомогти з будь-якими потребами.</li>
-				</ul>
 			</div>
 		</section>
 	</main>
@@ -207,6 +216,92 @@
 				$('.header__menu').toggleClass('active');
 				$('body').toggleClass('lock')
 			});
+		});
+	</script>
+	<script>
+		// Відкриття модального вікна з описом компанії
+		document.getElementById("info-btn").addEventListener("click", function () {
+			document.getElementById("info-modal").style.display = "block";
+		});
+
+		// Закриття модального вікна з описом компанії
+		document.querySelectorAll(".close").forEach(function (element) {
+			element.addEventListener("click", function () {
+				document.getElementById("info-modal").style.display = "none";
+			});
+		});
+
+		// Закриття модального вікна при кліку поза ним
+		window.addEventListener("click", function (event) {
+			var modal = document.getElementById("info-modal");
+			if (event.target === modal) {
+				modal.style.display = "none";
+			}
+		});
+	</script>
+<script>
+  // Відкриття модального вікна оформлення замовлення
+  var orderBtn = document.getElementById("order-btn");
+  var orderModal = document.getElementById("order-modal");
+  var orderCloseBtn = document.getElementById("order-close-btn");
+
+  orderBtn.addEventListener("click", function () {
+    orderModal.style.display = "block";
+  });
+
+  orderCloseBtn.addEventListener("click", function () {
+    orderModal.style.display = "none";
+  });
+
+  // Закриття модального вікна оформлення замовлення при кліку поза ним
+  window.addEventListener("click", function (event) {
+    var modal = document.getElementById("order-modal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Запобігання закриттю модального вікна оформлення замовлення при кліку на саму форму
+  var orderForm = document.querySelector(".order-form");
+  orderForm.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
+  // Отримання значень з форми оформлення замовлення при натисканні кнопки "Замовити"
+  var orderSubmitBtn = document.getElementById("submit-btn");
+  orderSubmitBtn.addEventListener("click", function () {
+    var sourceLanguage = document.getElementById("source-language").value;
+    var targetLanguage = document.getElementById("target-language").value;
+    var translationType = document.getElementById("translation-type").value;
+    var textVolume = document.getElementById("text-volume").value;
+    var textTopic = document.getElementById("text-topic").value;
+    var deadline = document.getElementById("deadline").value;
+    var clientName = document.getElementById("client-name").value;
+    var clientEmail = document.getElementById("client-email").value;
+    var deliveryAddress = document.getElementById("delivery-address").value;
+    // Виконати необхідні дії з отриманими значеннями форми
+
+    // Закриття модального вікна оформлення замовлення після відправлення замовлення
+    orderModal.style.display = "none";
+  });
+</script>
+	<script>
+		// Відкриття модального вікна при кліку на кнопку "Отримати консультацію"
+		document.getElementById("consultation-btn").addEventListener("click", function () {
+			document.getElementById("consultation-modal").style.display = "block";
+		});
+
+		// Закриття модального вікна при кліку на хрестик
+		document.getElementById("close-btn").addEventListener("click", function () {
+			document.getElementById("consultation-modal").style.display = "none";
+		});
+
+		// Закриття модального вікна при кліку поза ним
+		window.addEventListener("click", function (event) {
+			var modal = document.getElementById("consultation-modal");
+			if (event.target === modal) {
+				modal.style.display = "none";
+			}
 		});
 	</script>
 </body>
